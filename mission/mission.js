@@ -1,7 +1,6 @@
 const themeSelector = document.querySelector('#mode');
 const logo = document.querySelector('.logo');
 const body = document.body;
-console.log(logo);
 
 function changeTheme() {
   if (themeSelector.value === 'dark') {
