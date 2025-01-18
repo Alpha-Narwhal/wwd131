@@ -1,7 +1,7 @@
-const themeSelector = document.querySelector('mode');
-const logo = document.querySelector('#byuiLogo');
+const themeSelector = document.querySelector('#mode');
+const logo = document.querySelector('.logo');
 const body = document.body;
-console.log(themeSelector);
+console.log(logo);
 
 function changeTheme() {
   if (themeSelector.value === 'dark') {
