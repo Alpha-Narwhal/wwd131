@@ -1,4 +1,4 @@
-const themeSelector = document.querySelector('mode-select');
+const themeSelector = document.querySelector('mode');
 const logo = document.querySelector('#byuiLogo');
 const body = document.body;
 
