@@ -31,8 +31,14 @@ nav {
     color: var(--text-light);
 }  
 
+nav .nav-links {
+    display: block;
+}
+
 nav a {
     color: var(--text-light);
+    display: block;
+    margin: 10px 0;
 }
 
 header {
@@ -67,6 +73,18 @@ footer {
         grid-template-columns: 1fr 1fr;
         display: grid;
     }
+
+    nav .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 20px 30px;
+    }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -76,6 +94,10 @@ footer {
     }
     .menu {
         display: none;
+    }
+
+    nav a {
+        margin: 23px 60px;
     }
 }
 
