@@ -5,7 +5,7 @@ const handleResize = () => {
     if (window.innerWidth > 1000) {
         nav.classList.remove("show");
     } else {
-        nav.classList.remove("show");
+        nav.classList.add("show");
     }
 };
 
@@ -30,11 +30,11 @@ closeViewerButton.addEventListener("click", closeModal);
 
 const viewHandler = (event) => {
     const clickedImage = event.target;
-    const imageSrc = clickedImage.src.split("-")[0];
-    const fullImageSrc = imageSrc.split('/').pop() + "-full.jpeg";
+    const imageSrc = clickedImage.src.split("/").pop().split(".")[0]; // Adjusting this part
+    const fullImageSrc = "norris-full.jpeg";
+    
     openModal(fullImageSrc);
 };
-
 
 const pics = document.querySelector(".pics");
 
