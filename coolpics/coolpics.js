@@ -30,7 +30,7 @@ closeViewerButton.addEventListener("click", closeModal);
 
 const viewHandler = (event) => {
     const clickedImage = event.target;
-    const imageSrc = clickedImage.src.split("/").pop().split(".")[0];
+    const imageSrc = clickedImage.src;
     const fullImageSrc = "norris-full.jpeg";
     
     openModal(fullImageSrc);
