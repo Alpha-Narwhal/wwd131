@@ -31,10 +31,10 @@ closeViewerButton.addEventListener("click", closeModal);
 const viewHandler = (event) => {
     const clickedImage = event.target;
     const imageSrc = clickedImage.src.split("-")[0];
-    const fullImageSrc = imageSrc + "-full.jpeg";
-
+    const fullImageSrc = imageSrc.split('/').pop() + "-full.jpeg";
     openModal(fullImageSrc);
 };
+
 
 const pics = document.querySelector(".pics");
 
