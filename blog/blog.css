@@ -1,0 +1,110 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #473144;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+header {
+    border-bottom: 2px solid #AF1B3F;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    list-style: none;
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-nav li {
+    padding: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #AF1B3F;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.reviews-container {
+    display: grid;
+    gap: 20px;
+}
+
+.book-review {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.book-details {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.book-content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px; 
+    text-align: center; 
+}
+
+.book-content h2 {
+    font-family: 'Lora', serif;
+    color: #AF1B3F;
+    font-size: 1.5em;
+}
+
+.book-content img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    justify-self: center;
+    max-width: 100%;
+}
+
+.book-description {
+    text-align: left;
+}
+
+aside {
+    padding: 10px;
+    border-left: 2px solid #AF1B3F;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #EFC69B;
+    color: #473144;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.skiptocontent a:focus {
+    top: 10px;
+}
