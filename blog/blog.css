@@ -11,6 +11,7 @@ h1 {
     text-align: center;
     font-size: 2em;
     padding: 20px 0;
+    border-bottom: 2px solid #AF1B3F;
 }
 
 header {
@@ -30,6 +31,7 @@ header {
 
 .main-nav li {
     padding: 0 15px;
+    margin-bottom: 8px;
 }
 
 .main-nav a {
@@ -62,6 +64,18 @@ main {
 .book-details {
     font-size: 0.9em;
     color: #666;
+    text-align: right;
+    border-right: 2px solid #AF1B3F;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-top: 8px;
+}
+
+.book-details p:first-child {
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .book-content {
@@ -92,7 +106,7 @@ main {
 
 aside {
     padding: 10px;
-    border-left: 2px solid #AF1B3F;
+    border: 2px solid #AF1B3F;
 }
 
 .skiptocontent a {
