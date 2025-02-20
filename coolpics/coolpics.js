@@ -36,9 +36,23 @@ const viewHandler = (event) => {
     openModal(fullImageSrc);
 };
 
-const pics = document.querySelector(".pics");
+const picsContainer = document.querySelector(".pics");
 
-pics.addEventListener("click", (event) => {
+const generateImages = () => {
+    for (let i = 0; i < 9; i++) {
+        const figure = document.createElement("figure");
+        const img = document.createElement("img");
+        img.src = "norris-sm.jpeg";
+        img.alt = "picture";
+        figure.appendChild(img);
+        picsContainer.appendChild(figure);
+    }
+};
+
+picsContainer.innerHTML = "";
+generateImages();
+
+picsContainer.addEventListener("click", (event) => {
     if (event.target.tagName === "IMG") {
         viewHandler(event);
     }
